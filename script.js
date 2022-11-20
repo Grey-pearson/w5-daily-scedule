@@ -1,51 +1,3 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-
-// local storage
-// make func that will store the input for each hr and let me load it on page start
-// function that loads local data
-// func that can call to update local data for that hr
-
-// header: 
-// load the local time
-// save the time as a var
-// update time in P every second
-
-// container:
-// array of the hours to call to create the full list of elements
-// append the correct time class to each element so they are colored
-
-// make click from save button and id each button so can find which button got pressed
-// save to local data for that id
-
-
-// $(function () {
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
-
-  // call func for header time, to local data, display local data, 
-  // and create elements then assigning them the correct time class
-
-
-// });
-
 let myDay = [{
     id: '0',
     hour: '09',
@@ -207,7 +159,3 @@ $('.saveBtn').on('click', function(event){
   saveNotes()
   reminders()
 })
-
-// hr display is displaying the fucking army time
-// class appending for past future and present is wrong
-// local data manip is broke
